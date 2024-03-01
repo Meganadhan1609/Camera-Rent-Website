@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audib CameraRent</title>
+   <link rel="stylesheet" href="./camera.css">
+</head>
+
+<body>
+
+  <div id="footer">
+    <img src="./Images/header.jpg" alt="" width="100%" height="730px">
+  </div>
+
+  <div class="head2">
+    <div class="head1" style="color:rgba(0, 0, 0, 0.842); position: absolute;left: 20px; font-size: large; top: 250px; font-family:Arial, Helvetica, sans-serif; font-weight: 700;">
+      <ul>
+        <li>24.1megapixel APS-C CMOS sensor <br> + 4K video recordingbr</li>
+        <br><br>
+        <li>All cross-type 45 point AF (viewfinder) <br> and Dual pixel CMOS AF (Live View) <br><br></li>
+        <li>Wi-Fi connectivity + user-friendly <br> ergonomics and interface</li>
+      </ul>
+    </div>
+
+
+    <div class="container">
+      <div id="image" class="image"></div>
+      <input type="range" id="speedRange" min="1" max="49" value="5" step="8" hidden>
+    </div>
+  </div>
+  <div id="canon"> CANON EOS 6D </div>
+  <button id="bookNowButton">Book Now</button>
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <div id="dateSelection">
+        <select id="monthSelect">
+          <option value="0">January</option>
+          <option value="1">February</option>
+          <option value="2">March</option>
+          <option value="3">April</option>
+          <option value="4">May</option>
+          <option value="5">June</option>
+          <option value="6">July</option>
+          <option value="7">August</option>
+          <option value="8">September</option>
+          <option value="9">October</option>
+          <option value="10">November</option>
+          <option value="11">December</option>
+        </select>
+        <select id="yearSelect"></select>
+      </div>
+      <div class="calendar" id="calendar"></div>
+    </div>
+  </div>
+  <div id="registrationForm" class="modal">
+    <div class="modal-content">
+      <h2>Registration Form</h2>
+      <input type="text" id="fullName" placeholder="Full Name">
+      <input type="email" id="email" placeholder="Email">
+      <input type="text" id="mobile" placeholder="Mobile No">
+      <button id="submitBtn">Submit</button>
+    </div>
+  </div>
+
+  <script src="./camera.js">  </script>
+</body>
+
+</html>
